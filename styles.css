@@ -1,0 +1,110 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+.calculator {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 600px;
+    box-sizing: border-box;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.left-column,
+.right-column {
+    width: 48%;
+}
+
+.input-group {
+    margin-bottom: 10px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="number"],
+select {
+    height: 35px; /* Ensure the height is the same for both input and select */
+    font-size: 14px;
+    box-sizing: border-box; /* Ensure padding doesn't affect the overall width */
+}
+
+input[type="number"] {
+    width: 100%;
+}
+
+input[type="range"] {
+    width: 100%;
+    font-size: 16px;
+}
+
+select {
+    width: 100%;
+    padding: 5px;
+}
+
+hr {
+    margin: 20px 0;
+}
+
+h2 {
+    text-align: center;
+}
+
+.results {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.vertical-line {
+    width: 1px;
+    background-color: #ccc;
+    height: 80px;
+    margin: 0 10px;
+}
+
+p {
+    margin: 5px 0;
+}
+
+@media (max-width: 600px) {
+    .left-column,
+    .right-column {
+        width: 100%;
+    }
+    
+    .results {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .vertical-line {
+        display: none;
+    }
+    
+    .left-column, .right-column {
+        width: 100%;
+    }
+}
